@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>Document</title>
+
+    <style>
+        body {
+            background-image: url('images/bg.png');
+            background-position: center;
+            position: relative;
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .overlay {
+            position: absolute;
+            min-height: 100%;
+            min-width: 100%;
+            left: 0;
+            top: 0;
+            background: linear-gradient(to right, rgba(94, 58, 58, 0.637), rgba(194, 190, 190, 0.637));
+        } 
+        
+        .btn-login {
+            font-size: 0.9rem;
+            letter-spacing: 0.05rem;
+            padding: 0.75rem 1rem;
+        }
+        
+        .btn-google {
+            color: white !important;
+            background-color: #ea4335;
+        }
+
+        .btn-google:hover{
+            color: red;
+            background-color: #ea443585;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-10 col-lg-8 mx-auto">
+                    <div class="card border-0 shadow rounded-3 my-5">
+                        <div class="card-body p-4 p-sm-5">
+                            <h2 class="card-title text-center mb-5 fw-light fs-2">Daftar Anggota Baru</h2>
+                            <form>
+                                <div class="form-group mb-3">
+                                    <label for="">Masukkan Nama</label>
+                                    <input type="text" class="form-control" id="floatingInput" placeholder="Nama">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label for="">Alamat Email</label>
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label for=""> Masukkan Sandi</label>
+                                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label for="">Ulangi Sandi</label>
+                                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group mb-3">
+                                            <label for="">Tempat Lahir</label>
+                                            <input type="text" name="" class="form-control" placeholder="Masukkan Tempat Lahir Anda" id="TempatLahir">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group mb-3">
+                                            <label for="">Tanggal Lahir</label>
+                                            <input type="date" name="" class="form-control" >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label>Pekerjaan</label>
+                                    <select class="form-control">
+                                        <option></option>
+                                        <option>Pelajar</option>
+                                        <option>Mahasiswa</option>
+                                        <option>Bekerja</option>
+                                        <option>Lain-lain</option>
+                                    </select>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label>Alamat</label>
+                                    <textarea class="form-control" rows="3" placeholder="Masukkan Alamat Rumah Anda"></textarea>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label>Jenis Kelamin</label><br>
+                                    <div class="form-check-inline">
+                                        <input type="radio" class="form-check-input" name="radio1" id="radio2" checked="">
+                                        <label>Laki-Laki</label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <input type="radio" class="form-check-input" name="radio1" id="radio2">
+                                        <label>Perempuan</label>
+                                    </div>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label>Unggah Dokumen Foto dan Kartu Identitas</label>
+                                    <br>
+                                    <input type="file" class="form-control-file mt-2 mb-1" name="">
+                                    <br>
+                                    <small>Unggah file dengan ukuran maksimal 10MB</small>
+                                </div>
+
+                                <div class="form-check justify-content-center mb-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="agreeCheck">
+                                    <label class="form-check-label" for="agreeCheck">Saya setuju dengan semua kebijakan yang berlaku <a href="#" class="text-body"><u style="color: blue;">Persyaratan Layanan</u></a></label>
+                                </div>
+
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                                    Daftar
+                                </button>
+                                
+                                <!-- Modal -->
+                                <div class="modal fade" id="myModal" role="dialog">
+                                    <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                        <h5>Pendaftaran Berhasil!!!</h5>
+                                        <p>Selamat bergabung sebagai anggota Library Corner
+                                            Kartu Anggota akan dikirim pada email Anda maksimal 2x24 Jam.
+                                            <br> Terima Kasih</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <a type="button" class="btn btn-secondary" href="kontak.html">Hubungi Kami</a>
+                                        <a type="button" class="btn btn-primary" href="index.html">Kembali</a>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <p class="text-center text-muted mt-3 mb-0">Sudah punya akun? <a href="login.html"
+                                    class="fw-bold text-body"><u style="color: blue;">Masuk disini</u></a></p>    
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

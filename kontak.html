@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+    <title>FAQ</title>
+
+    <style>
+        .top img {
+            width: 80%;
+            box-shadow: 3px 7px 7px rgb(189 187 187);
+            border-radius: 8px;
+            position: relative;
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 5vh;
+        }
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .contact{
+            position: relative;
+            min-height: 100vh;
+            padding: 50px 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: #fff;
+        }
+        .contact .content{
+            max-width: 800px;
+            text-align: center;
+        }
+        .contact .content h2{
+            font-size: 36px;
+            font-weight: 500;
+            color: #022C76;
+        }
+        .contact .content p{
+            font-size: 36px;
+            font-weight: 300;
+            color: #022C76;
+        }
+        .inti{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .inti .contactInfo{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+        .inti .contactInfo .box{
+            position: relative;
+            padding: 20px 0;
+            display: flex;
+        }
+        .inti .contactInfo .box .lambang{
+            min-width: 60px;
+            height: 60px;
+            background: #CCE5FF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-size: 22px;
+        }
+        .inti .contactInfo .box .text{
+            display: flex;
+            margin-left: 20px;
+            font-size: 16px;
+            color: #022C76;
+            flex-direction: column;
+            font-weight: 300;
+        }
+        .inti .contactInfo .box .text h3{
+            font-weight: 500;
+            color: #00bcd4;
+        }
+
+        @media screen and (min-width: 600px){
+            .content p{
+                font-size: 16px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <a class="navbar-brand"><img src="images/logo.png" width="120px" height="51px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMobile" aria-controls="navbarMobile" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarMobile">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Beranda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="halamanbuku.html">Katalog Buku</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tentangkami.html">Tentang Kami</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="bantuan.html">Bantuan</a>
+                </li>
+                <li class="nav-item">
+                    <a class="cont nav-link" href="kontak.html">Kontak</a>
+                </li>
+                <li>
+                    <a href="signup.html" class="btn btn-outline-light" style="margin-right: 1rem !important;">Daftar</a>
+                </li>
+                <li>
+                    <a href="login.html" class="btn btn-outline-light">Masuk</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+        <div class="content text-center" style="padding: 30px 100px 30px 100px;">
+            <h2>Hubungi Kami</h2>
+            <p>
+                Jika Anda mendapat kendala mengenai pelayanan Library Corner, kami akan selalu membantu Anda 
+                melalui call center atau datang ke perpustakaan kami secara langsung.</p>
+        </div>
+        <div class="inti container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="lambang"><i class="fa fa-map-marker" aria-hidden="true"></i>                    
+                    </div>
+                    <div class="text">
+                        <h3>Alamat</h3>
+                        <p>Jalan maju mundur cantik No. 12, <br>
+                            Sukatarka, <br> Dunyaku 12340
+                            </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="lambang"><i class="fa fa-phone" aria-hidden="true"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Nomor Telepon</h3>
+                        <p>(020)123456</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="lambang"><i class="fa fa-envelope" aria-hidden="true"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>elsishapp@lc.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="page-footer">
+            <div class="container features">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <h4 class="feature-title">Kunjungi Kami</h4>
+                        <p>Jalan maju mundur cantik No. 12, Sukatarka
+                            <br>Dunyaku 12340</p>
+                            <div class="icon">
+                                <a class="logo" href="#">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a class="logo" href="#">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                <a class="logo" href="#">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </div>
+                    </div>
+    
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <h4 class="feature-title">Jam Buka</h4>
+                        <p>Senin-Jumat&emsp;: 08.00-20.00 WIB 
+                            <br> Sabtu&emsp;&emsp;&emsp;&emsp;: 07.00-20.00 WIB 
+                            <br> Minggu&emsp;&emsp;&emsp; : Libur</p>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <h4 class="feature-title">Kritik dan Saran</h4>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Nama" name="">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Alamat Email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <textarea type="text" class="form-control" placeholder="Masukkan Kritik dan Saran" name="" rows="4"></textarea>
+                        </div>
+                            <input type="submit" class="btn btn-secondary btn-block" value="Kirim" name="">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright text-center">© 2022 Copyright: librarycorner.com</div>
+        </footer>
+                        
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="mainjs.js"></script>
+</body>
+</html>

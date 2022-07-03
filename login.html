@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/js/bootstrap.bundle.min.js">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url('images/bg.png');
+            background-position: center;
+            position: relative;
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .overlay {
+            position: absolute;
+            min-height: 100%;
+            min-width: 100%;
+            left: 0;
+            top: 0;
+            background: linear-gradient(to right, rgba(94, 58, 58, 0.637), rgba(194, 190, 190, 0.637));
+        } 
+        
+        .btn-login {
+            font-size: 0.9rem;
+            letter-spacing: 0.05rem;
+            padding: 0.75rem 1rem;
+        }
+        
+        .btn-google {
+            color: white !important;
+            background-color: #ea4335;
+        }
+
+        .btn-google:hover{
+            color: red;
+            background-color: #ea443585;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <div class="container">
+        <div class="row">
+            <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+            <div class="card border-0 shadow rounded-3 my-5">
+                <div class="card-body p-4 p-sm-5">
+                <h2 class="card-title text-center mb-5 fw-light fs-2">Masuk Akun</h2>
+                <form>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Alamat Email</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword"> Masukkan Sandi</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" value="" id="rememberPasswordCheck">
+                        <label class="form-check-label" for="rememberPasswordCheck">Ingat Sandi</label>
+                    </div>
+                    <div class="d-grid">
+                        <a href="index.html" class="btn btn-primary btn-login text-uppercase fw-bold" type="submit">Masuk</a>
+                    </div>
+                    <hr class="my-3">
+                    <div class="d-grid my-2">
+                    <button class="btn btn-google btn-login text-uppercase fw-bold" type="submit">
+                        <i class="fab fa-google me-2"></i> Masuk dengan Google
+                    </button>
+                    </div>
+                    <p class="text-center text-muted mt-3 mb-0">Tidak punya akun? <a href="signup.html"
+                        class="fw-bold text-body"><u style="color: blue;">Daftar Disini</u></a></p>    
+                </form>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="mainjs.js"></script>
+</body>
+</html>
